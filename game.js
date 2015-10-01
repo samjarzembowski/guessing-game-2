@@ -10,31 +10,31 @@ var three = document.getElementById('three')
 
 // Ask Question 1
 function question1(){
-question1 = prompt('Does Roland live in Washington State?');
-if ((question1 === 'yes') || (question1 === 'y')) {
+question1 = prompt('Does Roland live in Washington State?').toUpperCase();
+if ((question1 === 'YES') || (question1 === 'Y')) {
   one.innerHTML = "You are correct!";
 } else {
-  one.innerHTML = "You are not correct."
+  one.innerHTML = "You are not correct.";
 }
 }
 
 // Ask Question 2
 function question2(){
-question2 = prompt('Is Roland a Musician?');
-if ((question1 === 'yes') || (question1 === 'y')) {
+question2 = prompt('Is Roland a Musician?').toUpperCase();
+if ((question2 === 'YES') || (question2 === 'Y')) {
   two.innerHTML = "You are correct!";
 } else {
-  two.innerHTML = "You are not correct."
+  two.innerHTML = "You are not correct.";
 }
 }
 
 // Ask Question 3
 function question3(){
 question3 = prompt('Is Roland a Cougar or a Husky?');
-if ((question1 === 'cougar') || (question1 === 'Cougar')) {
+if ((question3 === 'cougar') || (question3 === 'Cougar')) {
   three.innerHTML = "You are correct!";
 } else {
-  three.innerHTML = "You are not correct."
+  three.innerHTML = "You are not correct.";
 }
 }
 
