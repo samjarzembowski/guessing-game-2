@@ -1,52 +1,45 @@
 // Variables Declared
 var playerName;
-var numberCorrect = 0;
 var question1;
 var question2;
 var question3;
-
-
-// Get Player's name
-playerName = prompt('Please enter your name.');
-alert("Hello " + playerName + ", how well do you know Roland? Press the Enter key to continue.");
+var one = document.getElementById('one');
+var two = document.getElementById('two');
+var three = document.getElementById('three')
 
 
 // Ask Question 1
-question1 = prompt('Does Roland live in Washington State?').toLowerCase();
-console.log('Question 1 response: ' + question1);
-
+function question1(){
+question1 = prompt('Does Roland live in Washington State?');
 if ((question1 === 'yes') || (question1 === 'y')) {
-  alert("You are correct!");
-  numberCorrect++;
+  one.innerHTML = "You are correct!";
 } else {
-  alert("You are not correct.");
+  one.innerHTML = "You are not correct."
 }
-
+}
 
 // Ask Question 2
-question2 = prompt('Is Roland a Musician?').toLowerCase();
-console.log('Question 2 response: ' + question2);
-
-if ((question2 === 'yes') || (question2 === 'y')) {
-  alert("You are correct!");
-  numberCorrect++;
+function question2(){
+question2 = prompt('Is Roland a Musician?');
+if ((question1 === 'yes') || (question1 === 'y')) {
+  two.innerHTML = "You are correct!";
 } else {
-  alert("You are not correct.");
+  two.innerHTML = "You are not correct."
 }
-
+}
 
 // Ask Question 3
-question3 = prompt('Is Roland a Cougar or a Husky?').toLowerCase();
-console.log('Question 3 response: ' + question3);
-
-if ((question3 === 'cougar') || (question3 === 'Cougar')) {
-  alert("You are correct!");
-  numberCorrect++;
+function question3(){
+question3 = prompt('Is Roland a Cougar or a Husky?');
+if ((question1 === 'cougar') || (question1 === 'Cougar')) {
+  three.innerHTML = "You are correct!";
 } else {
-  alert("You are not correct.");
+  three.innerHTML = "You are not correct."
+}
 }
 
 
-// Summary code to display number of correct answers to the Player
-alert("Thank you " + playerName + " you have " + numberCorrect + " out of 3 correct. Thank you for playing!");
+question1();
+question2();
+question3();
 
