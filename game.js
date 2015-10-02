@@ -16,9 +16,11 @@ var answers = ['YES', 'Y'];
 function question1(){
 question1 = prompt(questions[0]).toUpperCase();
 if ((question1 === answers[0]) || (question1 === answers[1])) {
+  one.className = "correct";
   one.innerHTML = "You are correct!";
   thumb1.innerHTML = '<img src="img/thumb.jpg" width="200" />';
 } else {
+  one.className = "incorrect";
   one.innerHTML = "You are not correct.";
 }
 }
@@ -27,10 +29,12 @@ if ((question1 === answers[0]) || (question1 === answers[1])) {
 function question2(){
 question2 = prompt(questions[1]).toUpperCase();
 if ((question2 === answers[0]) || (question2 === answers[1])) {
+  two.className = "correct";
   two.innerHTML = "You are correct!";
   thumb2.innerHTML = '<img src="img/thumb.jpg" width="200" />';
 
 } else {
+  two.className = "incorrect";
   two.innerHTML = "You are not correct.";
 }
 }
@@ -39,9 +43,11 @@ if ((question2 === answers[0]) || (question2 === answers[1])) {
 function question3(){
 question3 = prompt(questions[2]).toUpperCase();
 if ((question3 === answers[0]) || (question3 === answers[1])) {
+  three.className = "correct";
   three.innerHTML = "You are correct!";
   thumb3.innerHTML = '<img src="img/thumb.jpg" width="200" />';
 } else {
+  three.className = "incorrect";
   three.innerHTML = "You are not correct.";
 }
 }
