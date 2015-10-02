@@ -6,12 +6,13 @@ var question3;
 var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three')
-
+var questions = ['Does Roland live in Washington State?', 'Is Roland a Musician?', 'Is Roland a Cougar?'];
+var answers = ['YES', 'Y'];
 
 // Ask Question 1
 function question1(){
-question1 = prompt('Does Roland live in Washington State?').toUpperCase();
-if ((question1 === 'YES') || (question1 === 'Y')) {
+question1 = prompt(questions[0]).toUpperCase();
+if ((question1 === answers[0]) || (question1 === answers[1])) {
   one.innerHTML = "You are correct!";
 } else {
   one.innerHTML = "You are not correct.";
@@ -20,8 +21,8 @@ if ((question1 === 'YES') || (question1 === 'Y')) {
 
 // Ask Question 2
 function question2(){
-question2 = prompt('Is Roland a Musician?').toUpperCase();
-if ((question2 === 'YES') || (question2 === 'Y')) {
+question2 = prompt(questions[1]).toUpperCase();
+if ((question2 === answers[0]) || (question2 === answers[1])) {
   two.innerHTML = "You are correct!";
 } else {
   two.innerHTML = "You are not correct.";
@@ -30,8 +31,8 @@ if ((question2 === 'YES') || (question2 === 'Y')) {
 
 // Ask Question 3
 function question3(){
-question3 = prompt('Is Roland a Cougar or a Husky?');
-if ((question3 === 'cougar') || (question3 === 'Cougar')) {
+question3 = prompt(questions[2]);
+if ((question3 === answers[0]) || (question3 === answers[1])) {
   three.innerHTML = "You are correct!";
 } else {
   three.innerHTML = "You are not correct.";
